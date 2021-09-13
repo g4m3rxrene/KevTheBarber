@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "633841196343",
+    "firebase_url": "https://kev-the-barber-default-rtdb.firebaseio.com",
+    "project_id": "kev-the-barber",
+    "storage_bucket": "kev-the-barber.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:633841196343:android:b45e7a9a699e7131b44eb2",
+        "android_client_info": {
+          "package_name": "com.ener.kev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "633841196343-rv2pkiodfp4clct24a15kuq57ulgqlu5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3EsJZ7L75ff3xkpOCV9LQ21Rhw7hwMl8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "633841196343-rv2pkiodfp4clct24a15kuq57ulgqlu5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

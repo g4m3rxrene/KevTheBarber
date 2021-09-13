@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Kev</string>
+    <!--  -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_Search_fragment">hello_Search_fragment</string>
+    <string name="hello_home_fragment">hello_home_fragment</string>
+    <string name="surname">Surname</string>
+    <string name="Surname">Surname</string>
+    <string name="first_name">First Name</string>
+    <string name="phone">Phone</string>
+    <string name="Address">Adress</string>
+    <string name="City">City</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_add_customer">AddCustomer</string>
+    <string name="email">Email</string>
+    <string name="service_to_be_rendered">Service to be rendered</string>
+    <string name="product_to_be_purchased">Product to be purchased</string>
+    <string name="by_clicking_the_submit_button_below_you_confirm_that_you_are_in_agreement_with_the_terms_and_conditions_of_kev_the_barber_please_view_our_terms_and_conditions_for_administering_our_services">By clicking the submit button below, you confirm that you are in Agreement with the terms and conditions of Kev The Barber.Please view our terms and conditions for administering our services.</string>
+    <string name="submit_infomation">Submit Infomation</string>
+    <string name="contact_information">Contact Information</string>
+    <string name="personal_information">Personal Information</string>
+</resources>
