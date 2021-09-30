@@ -4,6 +4,9 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.commit
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.setupWithNavController
 import com.ener.kev.databinding.ActivityMainBinding
 import java.io.Serializable
 
@@ -18,8 +21,7 @@ class MainActivity : AppCompatActivity() {
         UiFixes()
         FragmentSetUp()
         binding.fab.setOnClickListener {
-            val intent = Intent(this,AddCustomer::class.java)
-            startActivity(intent)
+            startActivity(Intent(this,AddCustomer::class.java))
         }
 
 
@@ -28,30 +30,16 @@ class MainActivity : AppCompatActivity() {
 
     private fun FragmentSetUp() {
 
-        binding.bottomNavBar.setOnItemSelectedListener {
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragment_layout) as NavHostFragment
+        val navController = navHostFragment.navController
 
-                item ->
-            when (item.itemId) {
-                R.id.home -> {
-                    supportFragmentManager.commit { replace(R.id.fragment_layout, Home()) }
-                    true
-                }
-                R.id.search -> {
-                    supportFragmentManager.commit { replace(R.id.fragment_layout, Search()) }
-                    true
-                }
-                else -> false
-            }
+        binding.bottomNavBar.setupWithNavController(navController)
     }
 
 }
 
 
     private fun UiFixes() {
-
-        supportFragmentManager.commit {
-            detach(Home()).attach(Home())
-        }
 
         binding.bottomNavBar.background = null
         binding.bottomNavBar.menu.getItem(1).isEnabled = false
@@ -61,7 +49,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
-}
+
  class CustomerData(val name:String,val surname:String, val email:String,val phone:String, val service:String,val products:String,val price:String, val payment:String,val date:String){
 
     constructor() : this("","","","","","","","","")

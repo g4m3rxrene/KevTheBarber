@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/home2">
+
+    <fragment
+        android:id="@+id/search2"
+        android:name="com.ener.kev.Search"
+        tools:layout="@layout/fragment_search"
+        android:label="Search" />
+    <activity
+        android:id="@+id/addCustomer"
+        android:name="com.ener.kev.AddCustomer"
+        tools:layout="@layout/activity_add_customer"
+        android:label="AddCustomer" />
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.ener.kev.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_addCustomer2"
+            app:destination="@id/addCustomer"
+            app:popUpTo="@id/home2" />
+        <action
+            android:id="@+id/action_home2_to_search22"
+            app:destination="@id/search2"
+            app:popUpTo="@id/home2" />
+    </fragment>
+</navigation>

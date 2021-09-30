@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/home"
+        android:id="@+id/home2"
         android:title=""
         app:showAsAction="always"
         android:icon="@drawable/ic_home"/>
@@ -15,7 +15,7 @@
         android:title=""/>
 
     <item
-        android:id="@+id/search"
+        android:id="@+id/search2"
         android:title=""
         app:showAsAction="always"
         android:icon="@drawable/ic_search"/>
